@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestLearning</string>
+    <string name="title_activity_main">测试</string>
+    <string name="tab_text_1">Tab_1</string>
+    <string name="tab_text_2">Tab_2</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>
