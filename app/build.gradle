@@ -21,6 +21,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -40,4 +42,6 @@ dependencies {
     annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation project(path: ':circleview')
+    implementation 'com.squareup.okhttp3:okhttp:4.0.0-alpha02'
+    implementation 'com.squareup.okio:okio:2.2.2'
 }

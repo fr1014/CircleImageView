@@ -1,4 +1,4 @@
-package com.example.testlearning;
+package com.example.testlearning.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+
+import com.example.testlearning.R;
 
 public class NotificationActivity extends AppCompatActivity {
 

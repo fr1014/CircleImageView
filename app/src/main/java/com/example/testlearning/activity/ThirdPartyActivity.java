@@ -1,4 +1,4 @@
-package com.example.testlearning;
+package com.example.testlearning.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 
+import com.example.testlearning.R;
 import com.example.testlearning.utils.ToastUtil;
 
 import permissions.dispatcher.NeedsPermission;

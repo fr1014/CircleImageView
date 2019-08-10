@@ -1,4 +1,4 @@
-package com.example.testlearning;
+package com.example.testlearning.activity;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.testlearning.OnItemClickListener;
+import com.example.testlearning.R;
 
 import java.util.ArrayList;
 import java.util.List;

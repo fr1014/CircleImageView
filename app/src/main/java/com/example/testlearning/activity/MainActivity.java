@@ -1,7 +1,8 @@
-package com.example.testlearning;
+package com.example.testlearning.activity;
 
 import android.os.Bundle;
 
+import com.example.testlearning.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;

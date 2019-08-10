@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.testlearning">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -12,25 +13,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MDActivity"/>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/NoActionBar" />
-        <activity android:name=".ThirdPartyActivity" />
-        <activity
-            android:name=".CallActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".NotificationActivity" />
-        <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".CardViewActivity" />
-        <activity android:name=".tablayout.TabLayoutActivity">
+        <activity android:name=".activity.Handler2Activity"></activity>
+        <activity android:name=".activity.HandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".thread.TransferActivity" />
+        <activity android:name=".anim_custom.AnimatorActivity" />
+        <activity android:name=".costom.MotionViewActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".coodinator.CoordinatorLayout" />
+        <activity android:name=".activity.MDActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".activity.ThirdPartyActivity" />
+        <activity
+            android:name=".activity.CallActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity android:name=".activity.CardViewActivity" />
+        <activity android:name=".httpclient.HttpActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

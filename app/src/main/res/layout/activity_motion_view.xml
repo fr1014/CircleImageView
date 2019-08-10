@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CallActivity">
+    tools:context=".costom.MotionViewActivity">
 
-    <Button
-        android:id="@+id/bt_call"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="拨打电话"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <com.example.testlearning.costom.CustomView
+        android:id="@+id/customview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

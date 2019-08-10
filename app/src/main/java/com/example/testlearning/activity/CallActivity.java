@@ -1,4 +1,4 @@
-package com.example.testlearning;
+package com.example.testlearning.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.testlearning.R;
 import com.example.testlearning.utils.ToastUtil;
 
 public class CallActivity extends AppCompatActivity {

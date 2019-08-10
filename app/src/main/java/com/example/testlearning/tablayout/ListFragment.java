@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,20 +16,22 @@ import com.example.testlearning.R;
 
 public class ListFragment extends Fragment {
 
-    private RecyclerView mRecycleView;
+    private FrameLayout mFrameLayout;
+    private RecyclerView mRecyclerView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mRecycleView = (RecyclerView) inflater.inflate(R.layout.list_fragment,container,false);
+       mFrameLayout =  (FrameLayout) inflater.inflate(R.layout.list_fragment,container,false);
 
-        return mRecycleView;
+        return mFrameLayout;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mRecycleView.setLayoutManager(new LinearLayoutManager(mRecycleView.getContext()));
-        mRecycleView.setAdapter(new RecyclerViewAdapter(getActivity()));
+        mRecyclerView = mFrameLayout.findViewById(R.id.recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(mRecyclerView.getContext()));
+        mRecyclerView.setAdapter(new RecyclerViewAdapter(getActivity()));
     }
 }
